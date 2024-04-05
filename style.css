@@ -399,7 +399,7 @@ footer {
 
 .about_t {
   font-family: "Bagel Fat One", system-ui;
-  font-size: 45px;
+  font-size: 65px;
   margin-top: 0px;
 }
 
@@ -426,6 +426,10 @@ footer {
 
 .p{
   color: black;
+}
+
+.about_contcont {
+  padding: 45px;
 }
 
 

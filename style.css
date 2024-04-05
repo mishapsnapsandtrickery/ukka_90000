@@ -1,0 +1,717 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color:#ff9980;
+}
+
+header {
+  background-color: #1db2a0;
+  box-shadow: 1px 0 8px 1px rgba(0,0,0,.25);
+  height: 60px;
+  width: 100%;
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav{
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+  margin: 0;
+  width: 40%;
+}
+
+.header_logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.void_con{
+  width: 25px;
+  height: 100%;
+}
+
+.header_logo_text{
+  font-size: 28px;
+  font-family: "Bagel Fat One", system-ui;
+  margin-top: 9px;
+}
+
+nav > a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #242424;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color:#ffffff
+}
+
+.menu_button {
+  display: inline-block;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+.menu_button i {
+  font-size: 20px;
+}
+
+
+.menubars {
+  display: block;
+  width: 100%;
+  height : 200px;
+  background-color: rgba( 0, 0, 0, 0.6 );
+  backdrop-filter: blur(5px);
+  position : sticky;
+  top: 60px;
+  z-index: 9999;
+}
+
+.menubars a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #ededed;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menubars a:hover {
+  text-decoration: underline;
+}
+
+.menubars ul {
+  height : 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin:0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#outnow {
+  background-color: #fffcdb;
+  height: 400px;
+  width: auto ;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+@media (min-width: 490px) and (max-width: 768px) {
+  nav {
+    display:none;
+  }
+
+  .header_logo_text{
+    font-size: 24px;
+    font-family: "Bagel Fat One", system-ui;
+    margin-top: 13px;
+  }
+
+  .menu_button:hover {
+    cursor: pointer;
+  }
+
+  #outnow .greycover{
+    display: none;
+  }
+
+  
+}
+
+@media (max-width: 490px) {
+  nav {
+    display:none;
+  }
+
+  .header_logo_text{
+    font-size: 24px;
+    font-family: "Bagel Fat One", system-ui;
+    margin-top: 13px;
+  }
+
+  .menu_button:hover {
+    cursor: pointer;
+  }
+
+  .greycover{
+    display: none;
+  }
+
+  #outnow .cover img{
+    display: none;
+  }
+
+
+  #outnow {
+    
+    background-image: url("opa_ukkacover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : auto auto;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+    .menu_button>a {
+      display:none;
+    }
+}
+
+.main_container {
+  margin: 20px;
+}
+
+
+.outnow_textbox {
+  width: 200px;
+  height: 255px;
+  flex-shrink: 0;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.outnow_textbox h1 {
+  margin: 22px 0px 5px 0px ;
+  font-size: 39px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+.outnow_textbox p {
+  margin: 10px 0px 28px 0px ;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 170%;
+}
+
+.outnow_textbox span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.outnow_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover > img {
+  width: 180px;
+  height: auto;
+  box-shadow: 1px 0 8px 1px rgba(0,0,0,.25);
+  margin: 0px 15px 0px 20px;
+}
+
+.greycover > img {
+  width: 180px;
+  height: auto;
+}
+
+
+.cover{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.greycover {
+  width: 180px;
+  height: 255px;
+  background-color: #d1d1d1;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 0 5px 1px rgba(0,0,0,.25);
+  margin: 0px 15px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+footer {
+  background-color: #292929;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  padding: 15px 25px 35px 25px ;
+  width:100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0.83;
+}
+
+
+#intro_img > img {
+  width: 110px;
+  height: auto;
+  margin: 10px;
+}
+
+#intro h1 {
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 13px 0px;
+}
+
+#intro p {
+  font-size: 13px;
+  margin: 11px 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 170%;
+}
+
+#intro a {
+  color: #e8e8e8;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.intro_textbox{
+  margin-left: 15px;
+}
+
+
+
+#cont_cont {
+  padding: 30px;
+  padding-bottom: 45px;
+  background-color: #fffcdb;
+  margin: 20px 0px 40px 0px;
+  overflow: hidden;
+}
+
+.main_header {
+  margin: 20px;
+  padding: 15px 0px 0px 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.img_con{
+  width:100%;
+}
+
+.img_con > img {
+  width: 35vw;
+  height: auto;
+}
+
+#contact_img > img {
+  width: 150px;
+  height: auto;
+}
+
+.contact_textbox {
+  list-style-type: none;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  list-style-type: none;
+  font-size: 15px;
+  
+}
+
+.contact_personal ul {
+  padding: 0;
+}
+
+.contact_personal > li {
+  font-family: "Lato", sans-serif;
+  margin: 5px 0px;
+}
+
+.name > li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+}
+
+
+.contact_textbox > li {
+  font-family: "Lato", sans-serif;
+  margin: 5px 0px;
+}
+
+.contact_textbox :nth-child(1) {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.contact_textbox :nth-child(3) {
+  font-weight: 900;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.contact_textbox a {
+  font-family: "Lato", sans-serif;
+  color:black;
+}
+
+.contact_info {
+  padding: 30px;
+  background-color: #fffcdb;
+  margin: 20px 0px;
+  
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.about_t {
+  font-family: "Bagel Fat One", system-ui;
+  font-size: 27px;
+  margin-top: 0px;
+}
+
+.about {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  line-height: 170%;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.n {
+  margin-top: 40px;
+}
+
+.p{
+  color: black;
+}
+
+
+
+.personal_contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_personal :nth-child(5) {
+  margin-top: 10px;
+  color: #9c9c9c;
+}
+
+form input {
+  width : 25vw;
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  font-family: "Lato" , sans-serif;
+  font-size: 15px;
+  padding: 0px 10px;
+  margin: 10px;
+}
+
+form input:nth-child(3) {
+  margin: 10px;
+  width: 70vw;
+  height: 150px;
+  border: 1px solid #d1d1d1;
+  font-family: "Lato" , sans-serif;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+
+.btn {
+  margin:10px;
+}
+
+.void_viewwith {
+  height: 60px;
+}
+
+
+
+/*여기서부터 버튼효과*/
+
+.button.dark {
+  --background: #2F3545;
+  --shadow: 0 2px 8px -1px rgba(21, 25, 36, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
+}
+
+.button {
+  --background: #275efe;
+  --text: #fff;
+  --font-size: 16px;
+  --duration: .5s;
+  --move-hover: -4px;
+  --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+  padding: 16px 32px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: var(--font-size);
+  border-radius: 24px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: 0.5px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y));
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  width: 198px;
+}
+.button div {
+  display: flex;
+}
+.button div span {
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-style: normal;
+}
+.button div span:nth-child(1) {
+  --d: 0.05s;
+}
+.button div span:nth-child(2) {
+  --d: 0.1s;
+}
+.button div span:nth-child(3) {
+  --d: 0.15s;
+}
+.button div span:nth-child(4) {
+  --d: 0.2s;
+}
+.button div span:nth-child(5) {
+  --d: 0.25s;
+}
+.button div span:nth-child(6) {
+  --d: 0.3s;
+}
+.button div span:nth-child(7) {
+  --d: 0.35s;
+}
+.button div span:nth-child(8) {
+  --d: 0.4s;
+}
+.button div span:nth-child(9) {
+  --d: 0.45s;
+}
+.button div span:nth-child(10) {
+  --d: 0.5s;
+}
+.button div span:nth-child(11) {
+  --d: 0.55s;
+}
+.button:hover {
+  --y: var(--move-hover);
+  --shadow: var(--shadow-hover);
+  --move: -4px;
+  --shadow-active: 0 3px 1px rgba(0, 0, 0, .2);
+}
+.button:hover span {
+  -webkit-animation: move var(--duration) linear var(--d);
+          animation: move var(--duration) linear var(--d);
+}
+
+
+@-webkit-keyframes move {
+  40% {
+    transform: translateY(var(--move));
+    text-shadow: var(--shadow-active);
+  }
+}
+
+@keyframes move {
+  40% {
+    transform: translateY(var(--move));
+    text-shadow: var(--shadow-active);
+  }
+}
+
+
+
+
+/* 메일전송 버튼관련 */
+#btnSubmit {
+  --primary: #1db2a0;
+  --primary-dark: #188679;
+  --primary-darkest: #0e534b;
+  --text: #FFFFFF;
+  --text-opacity: 1;
+  --success: #2B3044;
+  --success-scale: .2;
+  --success-opacity: 0;
+  --border-radius: 7;
+  --overflow: hidden;
+  --rotate: 0;
+  --plane-x: 0;
+  --plane-y: 0;
+  --plane-opacity: 1;
+  --left-wing-background: var(--primary);
+  --left-wing-first-x: 0;
+  --left-wing-first-y: 0;
+  --left-wing-second-x: 50;
+  --left-wing-second-y: 0;
+  --left-wing-third-x: 0;
+  --left-wing-third-y: 100;
+  --left-body-background: var(--primary);
+  --left-body-first-x: 50;
+  --left-body-first-y: 0;
+  --left-body-second-x: 50;
+  --left-body-second-y: 100;
+  --left-body-third-x: 0;
+  --left-body-third-y: 100;
+  --right-wing-background: var(--primary);
+  --right-wing-first-x: 50;
+  --right-wing-first-y: 0;
+  --right-wing-second-x: 100;
+  --right-wing-second-y: 0;
+  --right-wing-third-x: 100;
+  --right-wing-third-y: 100;
+  --right-body-background: var(--primary);
+  --right-body-first-x: 50;
+  --right-body-first-y: 0;
+  --right-body-second-x: 50;
+  --right-body-second-y: 100;
+  --right-body-third-x: 100;
+  --right-body-third-y: 100;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  padding: 8px 0;
+  min-width: 100px;
+  text-align: center;
+  margin: 0;
+  line-height: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  background: none;
+  outline: none;
+  color: var(--text);
+  transform: rotate(calc(var(--rotate) * 1deg)) translateZ(0);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#btnSubmit .left,
+#btnSubmit .right {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: var(--plane-opacity);
+  transform: translate(calc(var(--plane-x) * 1px), calc(var(--plane-y) * 1px)) translateZ(0);
+}
+#btnSubmit .left:before, #btnSubmit .left:after,
+#btnSubmit .right:before,
+#btnSubmit .right:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: calc(var(--border-radius) * 1px);
+  transform: translate(var(--x, 0.4%), var(--y, 0)) translateZ(0);
+  z-index: var(--z-index, 2);
+  background: var(--background, var(--left-wing-background));
+  -webkit-clip-path: polygon(calc(var(--first-x, var(--left-wing-first-x)) * 1%) calc(var(--first-y, var(--left-wing-first-y)) * 1%), calc(var(--second-x, var(--left-wing-second-x)) * 1%) calc(var(--second-y, var(--left-wing-second-y)) * 1%), calc(var(--third-x, var(--left-wing-third-x)) * 1%) calc(var(--third-y, var(--left-wing-third-y)) * 1%));
+          clip-path: polygon(calc(var(--first-x, var(--left-wing-first-x)) * 1%) calc(var(--first-y, var(--left-wing-first-y)) * 1%), calc(var(--second-x, var(--left-wing-second-x)) * 1%) calc(var(--second-y, var(--left-wing-second-y)) * 1%), calc(var(--third-x, var(--left-wing-third-x)) * 1%) calc(var(--third-y, var(--left-wing-third-y)) * 1%));
+}
+
+#btnSubmit .left:after {
+  --x: 0;
+  --z-index: 1;
+  --background: var(--left-body-background);
+  --first-x: var(--left-body-first-x);
+  --first-y: var(--left-body-first-y);
+  --second-x: var(--left-body-second-x);
+  --second-y: var(--left-body-second-y);
+  --third-x: var(--left-body-third-x);
+  --third-y: var(--left-body-third-y);
+}
+#btnSubmit .right:before {
+  --x: -.4%;
+  --z-index: 2;
+  --background: var(--right-wing-background);
+  --first-x: var(--right-wing-first-x);
+  --first-y: var(--right-wing-first-y);
+  --second-x: var(--right-wing-second-x);
+  --second-y: var(--right-wing-second-y);
+  --third-x: var(--right-wing-third-x);
+  --third-y: var(--right-wing-third-y);
+}
+
+#btnSubmit .right:after {
+  --x: 0;
+  --z-index: 1;
+  --background: var(--right-body-background);
+  --first-x: var(--right-body-first-x);
+  --first-y: var(--right-body-first-y);
+  --second-x: var(--right-body-second-x);
+  --second-y: var(--right-body-second-y);
+  --third-x: var(--right-body-third-x);
+  --third-y: var(--right-body-third-y);
+}
+
+#btnSubmit span {
+  display: block;
+  position: relative;
+  z-index: 4;
+  opacity: var(--text-opacity);
+}
+
+#btnSubmit span.success {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8px;
+  transform: rotate(calc(var(--rotate) * -1deg)) scale(var(--success-scale)) translateZ(0);
+  opacity: var(--success-opacity);
+  color: var(--success);
+}

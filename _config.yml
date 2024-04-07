@@ -1,7 +1,0 @@
-# Analytics
-analytics:
-  provider               : "google-gtag" 
-  
-  google:
-    tracking_id          : "G-88VQFM7HGF"
-    anonymize_ip         : false

@@ -34,7 +34,7 @@
       <div class="menu_button">
         <a style="text-decoration:none" class="fa-solid fa-bars"></a>
       </div>
-      
+
     </div>
 
 
@@ -54,66 +54,90 @@
     <h1>Contact</h1>
   </div>
 
+
+
+
+
+  
   <div class="main_container">
 
-    <div class="contact_info">
-      <div id="contact_img">
-        <img src="월간기획로고_누끼완.png" />
-      </div>
-      <ul class="contact_textbox">
-        <li> Email </li>
-        <li> ukka90000@gmail.com </li>
-        <li> Instagram </li>
-        <a href="https://www.instagram.com/ukka_90000/"> @ukka_90000</a>
-      </ul>
+    <div class="content">
 
-      <div class="team">
-        <div class="personal_contact">
-          <ul class="contact_personal name">
-            <li> 로피 </li>
-            <li> 레몬 </li>
-            <li> 이오 </li>
-            <li> 체다 </li>
-            <li> 승연 (웹페이지) </li>
-          </ul>
+      <div class="container">
+        <div class="row align-items-stretch no-gutters contact-wrap">
+          <div class="col-md-4">
+            <div class="contact-info h-100">
+              <h3>Contact Information</h3>
+              <div class="contact_info">
+                <div id="contact_img">
+                  <img src="월간기획로고_누끼완.png" />
+                </div>
+                <ul class="contact_textbox">
+                  <li> <i class="fa-solid fa-envelope"></i>  &nbsp; Email </li>
+                  <li>  &nbsp; &nbsp;  &nbsp; ukka90000@gmail.com </li>
+                  <li> <i class="fa-brands fa-instagram"></i> &nbsp; Instagram </li>
+                  <a href="https://www.instagram.com/ukka_90000/">  &nbsp; &nbsp;  &nbsp; @ukka_90000</a>
+                </ul>
+                <div class="personal_contact">
+                  <ul class="contact_personal name">
+                    <li> 로피 </li>
+                    <li> 레몬 </li>
+                    <li> 이오 </li>
+                    <li> 체다 </li>
+                    <li> 승연(웹) </li>
+                  </ul>
 
-          <ul class="contact_personal mailad">
-            <li> kimyj5467@naver.com  </li>
-            <li> 96dcff@naver.com </li>
-            <li> ijamn0654@naver.com </li>
-            <li> hohoboyun@gmail.com </li>
-            <li> rubyhsy@naver.com </li>
+                  <ul class="contact_personal mailad">
+                    <li> kimyj5467@naver.com  </li>
+                    <li> 96dcff@naver.com </li>
+                    <li> ijamn0654@naver.com </li>
+                    <li> hohoboyun@gmail.com </li>
+                    <li> rubyhsy@naver.com </li>
 
-          </ul>
+                  </ul>
+                </div>
+            </div>
+              
+          </div>
+          <div class="col-md-8">
+            <div class="form h-100">
+              <h3>Send us a message</h3>
+              <form class="mb-5" method="post" id="gform" name="contactForm" action="https://script.google.com/macros/s/AKfycbx3w1bl-6xh1BmDITaUtkQf4S02SRAB-vE4-jJIgR0KRjGbaLlRSIA9iy1FhJx5Zf4mhA/exec">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Name *</label>
+                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                  </div>
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Email *</label>
+                    <input type="text" name="email" class="form-control" placeholder="Your Email">
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group mb-5">
+                    <label for="message" class="col-form-label">Message *</label>
+                    <input type="text" name="message" class="form-control" placeholder="Message">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <div class="btn">
+                      <button class="btn btn-primary rounded-0 py-2 px-4"> Send Message </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>        
         </div>
       </div>
 
-      
-      
-    </div>
-
-    <div id='cont_cont'>
-      <h3>Send message to us!</h3>
-
-      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbx3w1bl-6xh1BmDITaUtkQf4S02SRAB-vE4-jJIgR0KRjGbaLlRSIA9iy1FhJx5Zf4mhA/exec">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="text" name="email" placeholder="Your Email Address">
-        <input type="text" name="message" placeholder="Message">
-
-        <div class="btn">
-          <button class="button-success pure-button button-xlarge"> <i class="fa fa-paper-plane"></i>&nbsp;Send </button>
-        </div>
-
-        <div class="thankyou_message" style="display:none;">
-          <h2><em>Thanks</em> for contacting us!
-          We will get back to you soon!</h2>
-        </div>
-      
-      </form>
-
-      
     </div>
     
+
   </div>
 
   <footer>
@@ -130,10 +154,10 @@
         </p>
         <a href="about.html"> > 더 알아보기 </a>
       </div>
-      
+
     </section>
   </footer>
-  
+
 
   <script src="script.js"></script>
   <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
